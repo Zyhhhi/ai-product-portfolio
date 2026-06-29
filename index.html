@@ -1796,10 +1796,148 @@
   }
 
   @media (max-width: 560px) {
+    #projects {
+      order: 2 !important;
+      padding: 36px 0 44px !important;
+      gap: 14px;
+      scroll-margin-top: 18px;
+    }
+
+    #projects > .section-title,
+    .container > div.section:nth-of-type(5) > .section-title {
+      margin-bottom: 6px;
+      font-size: 30px;
+      line-height: 1.12;
+    }
+
+    #projects .project-card.case-feature,
+    #projects .project-card.case-support {
+      padding: 18px;
+      border-radius: 16px;
+    }
+
+    #projects .case-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    #projects .case-index {
+      display: none;
+    }
+
+    #projects .case-feature .project-name,
+    .container > div.section:nth-of-type(5) .project-card.project-iteration .project-name,
+    .container > div.section:nth-of-type(5) .project-card.project-autoinsight .project-name,
+    .container > div.section:nth-of-type(5) .project-card.project-miniapp .project-name {
+      font-size: 24px !important;
+      line-height: 1.18;
+    }
+
+    #projects .case-one-liner,
+    #projects .project-desc {
+      font-size: 14px;
+      line-height: 1.72;
+    }
+
+    #projects .case-points {
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    #projects .case-point {
+      padding-top: 10px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    #projects .project-tags {
+      margin-top: 14px;
+      gap: 6px;
+    }
+
+    #projects .p-tag {
+      font-size: 11px;
+      padding: 5px 8px;
+    }
+
+    #projects .project-links {
+      margin-top: 14px;
+    }
+
+    #projects .project-link {
+      width: auto;
+      min-height: 34px;
+      padding: 7px 11px;
+      font-size: 12px;
+    }
+
+    #projects .case-visual {
+      min-height: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #projects .case-preview {
+      min-height: 0;
+      padding: 12px;
+      border-radius: 14px;
+    }
+
+    #projects .mock-tabs,
+    #projects .mock-sidebar {
+      display: none;
+    }
+
+    #projects .mock-shell {
+      padding: 10px;
+    }
+
+    #projects .mock-topbar strong {
+      min-width: 0;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #projects .metric-strip {
+      gap: 8px;
+    }
+
+    #projects .metric-strip div,
+    #projects .mock-list div,
+    #projects .report-section,
+    #projects .question-row {
+      padding: 9px;
+      font-size: 12px;
+    }
+
+    #projects .phone-shell {
+      max-width: none;
+      min-height: 0;
+      border-radius: 18px;
+      padding: 12px;
+    }
+
+    #projects .miniapp-qr-panel {
+      grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    #projects .support-grid {
+      gap: 12px;
+    }
+
     .motion-ready .reveal-target:not(.is-visible) {
       transform: translate3d(0, 14px, 0);
       transition-duration: 520ms;
       transition-delay: 0ms;
+    }
+
+    .motion-ready #projects .project-card.reveal-target:not(.is-visible) {
+      opacity: 1;
+      transform: none;
     }
 
     .preview-window {
