@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>张怡恒 · AI产品经理</title>
+<meta name="description" content="张怡恒的 AI 产品作品集，展示 TalentFlow AI、简岗配、ETF-Agent 等围绕真实业务场景拆解与 MVP 交付的项目实践。">
 <script>
   document.documentElement.classList.add('motion-ready');
 </script>
@@ -682,11 +683,17 @@
     border-color: rgba(255,255,255,0.1);
     color: var(--text2);
   }
+  .container > div.section:nth-of-type(5) .project-card.project-talentflow,
   .container > div.section:nth-of-type(5) .project-card.project-original,
   .container > div.section:nth-of-type(5) .project-card.project-iteration,
   .container > div.section:nth-of-type(5) .project-card.project-autoinsight,
   .container > div.section:nth-of-type(5) .project-card.project-miniapp {
     padding: clamp(30px, 5vw, 54px);
+  }
+  .project-card.project-talentflow {
+    order: 0;
+    min-height: 420px;
+    background: linear-gradient(135deg, rgba(141,183,255,0.2), rgba(142,243,197,0.12), rgba(255,255,255,0.045));
   }
   .project-card.project-iteration {
     order: 1;
@@ -725,6 +732,7 @@
   .container > div.section:nth-of-type(5) .project-card:not(.project-etf):not(.project-snake) {
     width: 100%;
   }
+  .container > div.section:nth-of-type(5) .project-card.project-talentflow .project-name,
   .container > div.section:nth-of-type(5) .project-card.project-iteration .project-name,
   .container > div.section:nth-of-type(5) .project-card.project-autoinsight .project-name,
   .container > div.section:nth-of-type(5) .project-card.project-miniapp .project-name {
@@ -1220,6 +1228,7 @@
       border-radius: 18px;
     }
     .container > div.section:nth-of-type(5) .project-card.project-iteration .project-name,
+    .container > div.section:nth-of-type(5) .project-card.project-talentflow .project-name,
     .container > div.section:nth-of-type(5) .project-card.project-autoinsight .project-name,
     .container > div.section:nth-of-type(5) .project-card.project-miniapp .project-name {
       font-size: 28px;
@@ -1827,6 +1836,7 @@
     }
 
     #projects .case-feature .project-name,
+    .container > div.section:nth-of-type(5) .project-card.project-talentflow .project-name,
     .container > div.section:nth-of-type(5) .project-card.project-iteration .project-name,
     .container > div.section:nth-of-type(5) .project-card.project-autoinsight .project-name,
     .container > div.section:nth-of-type(5) .project-card.project-miniapp .project-name {
@@ -2148,10 +2158,55 @@
   <div class="section" id="projects">
     <div class="section-title">项目案例</div>
 
-    <article class="project-card case-feature project-iteration">
+    <article class="project-card case-feature project-talentflow">
       <div class="case-layout">
         <div class="case-copy">
           <span class="case-index">Selected Work 01</span>
+          <span class="case-stage">重点项目 · AI 招聘人才库 MVP</span>
+          <span class="project-name">TalentFlow AI｜AI 面试人才库系统 MVP</span>
+          <p class="case-one-liner">面向 HR / HRBP 的 AI 面试人才库系统 MVP，展示对真实招聘业务场景的拆解、AI 工作流设计和 Vibe Coding 快速交付能力。</p>
+          <div class="case-points">
+            <div class="case-point"><span>项目背景</span><p>根据 HR 提出的“面试人才库系统”需求，覆盖候选人录入、简历导入解析、面试流程跟进、AI 优劣势分析、招聘数据看板和内部试用版架构。</p></div>
+            <div class="case-point"><span>核心功能</span><p>设计候选人库表格管理、txt / docx / pdf 简历解析、简历信息自动提取、JD 匹配、AI 候选人评审工作台和招聘流程漏斗看板。</p></div>
+            <div class="case-point"><span>我的角色</span><p>负责 HR 场景拆解、产品流程、MVP 边界、AI 输出结构和验收标准设计，并使用 GPT + Codex 完成前端 MVP 交付与迭代。</p></div>
+            <div class="case-point"><span>技术栈</span><p>Vite / React / TypeScript / localStorage / Supabase / Cloudflare Worker / DeepSeek API / GitHub Pages。</p></div>
+            <div class="case-point"><span>项目亮点</span><p>不是通用聊天机器人，而是围绕“简历导入 → 候选人档案 → JD 匹配 → AI 分析 → 面试跟进 → 数据看板”的业务闭环设计。</p></div>
+            <div class="case-point"><span>后续迭代</span><p>可继续扩展数据库、权限、日志、简历文件存储、面试官协作和候选人隐私保护机制。</p></div>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">AI 产品</span><span class="p-tag">HR SaaS</span><span class="p-tag">Vibe Coding</span><span class="p-tag">MVP</span><span class="p-tag">招聘看板</span>
+          </div>
+          <div class="project-links">
+            <a class="project-link live" href="https://zyhhhi.github.io/talentflow-ai-mvp/" target="_blank">在线体验</a>
+          </div>
+        </div>
+        <div class="case-visual" aria-label="TalentFlow AI 招聘工作台预览">
+          <div class="case-preview matcher-mock">
+            <div class="mock-topbar"><i></i><i></i><i></i><strong>TalentFlow AI Review Desk</strong></div>
+            <div class="mock-shell">
+              <div class="mock-sidebar"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="mock-content">
+                <div class="mock-tabs"><span class="active">候选人库</span><span>AI 分析</span><span>数据看板</span></div>
+                <div class="score-band">
+                  <div class="score-ring">82<small>/100</small></div>
+                  <div><span class="mock-label">目标岗位</span><strong class="mock-title">AI 产品经理</strong></div>
+                </div>
+                <div class="metric-strip"><div>候选人<strong>14</strong></div><div>已安排<strong>8</strong></div><div>到岗跟进<strong>3</strong></div></div>
+                <div class="mock-list">
+                  <div>AI 优势：岗位匹配、产品流程、项目落地能力较突出。</div>
+                  <div>建议追问：请拆解一次从简历导入到面试结论的完整流程。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card case-feature project-iteration">
+      <div class="case-layout">
+        <div class="case-copy">
+          <span class="case-index">Selected Work 02</span>
           <span class="case-stage">MVP · AI 求职匹配产品</span>
           <span class="project-name">简岗配｜AI 简历-JD 匹配工具</span>
           <p class="case-one-liner">面向投递前判断场景，把简历和岗位 JD 转化为匹配评分、优势短板、优化建议和面试准备清单。</p>
@@ -2194,7 +2249,7 @@
     <article class="project-card case-feature project-autoinsight">
       <div class="case-layout">
         <div class="case-copy">
-          <span class="case-index">Selected Work 02</span>
+          <span class="case-index">Selected Work 03</span>
           <span class="case-stage">Beta 候选 · 汽车商品企划 Agent</span>
           <span class="project-name">AutoInsight AI｜海外汽车商品企划 Agent</span>
           <p class="case-one-liner">面向汽车商品企划岗位，把国家市场、竞品、用户画像和商品策略整合为可下载的结构化企划报告。</p>
@@ -2238,7 +2293,7 @@
     <article class="project-card case-feature project-miniapp">
       <div class="case-layout">
         <div class="case-copy">
-          <span class="case-index">Selected Work 03</span>
+          <span class="case-index">Selected Work 04</span>
           <span class="case-stage">已上线 · 微信小程序</span>
           <span class="project-name">考公资料分析刷题小程序</span>
           <p class="case-one-liner">面向公考备考用户，把资料分析专项练习、错题记录和 AI 逐步解析集中到一个轻量入口。</p>
